@@ -54,8 +54,8 @@ const Work = () => {
         </h2>
         <div className="work-flex">
           {[
-            { title: "Sacred Temples Travels", category: "Web Application", tools: "HTML, CSS, JavaScript", desc: "Built a responsive website to showcase famous temples across India.", image: "/images/temples.png.png" },
-            { title: "Personal Portfolio", category: "Web Design", tools: "HTML, CSS, JavaScript", desc: "Created an interactive portfolio to display projects and abilities.", image: "/images/portfolio.png.png" }
+            { title: "Sacred Temples Travels", category: "Web Application", tools: "HTML, CSS, JavaScript", desc: "Built a responsive website to showcase famous temples across India.", image: "./images/temples.png.png" },
+            { title: "Personal Portfolio", category: "Web Design", tools: "HTML, CSS, JavaScript", desc: "Created an interactive portfolio to display projects and abilities.", image: "./images/portfolio.png.png" }
           ].map((project, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">

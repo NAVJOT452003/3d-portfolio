@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/images/profile.jpg" target="_blank" className="navbar-title" data-cursor="disable">
+        <a href="./images/profile.jpg" target="_blank" className="navbar-title" data-cursor="disable">
           Navjot
         </a>
         <a
