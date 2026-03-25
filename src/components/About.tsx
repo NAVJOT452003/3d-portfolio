@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          To use my academic knowledge and technical skills in Web development while pursuing MCA. I want to gain hands-on experience through meaningful projects and practical problem-solving.
+          I am a passionate web developer with a strong foundation in computer science and a keen interest in building modern, responsive, and user-friendly web applications. I am currently pursuing my MCA and am eager to apply my technical skills and creativity to solve real-world problems through innovative web solutions.
         </p>
       </div>
     </div>
