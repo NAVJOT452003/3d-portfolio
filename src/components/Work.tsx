@@ -54,10 +54,10 @@ const Work = () => {
         </h2>
         <div className="work-flex">
           {[
-            { title: "Sacred Temples Travels", category: "Web Application", tools: "HTML, CSS, JavaScript", desc: "Built a responsive website to showcase famous temples across India.", image: "./images/temples.png.png" },
-            { title: "Personal Portfolio", category: "Web Design", tools: "HTML, CSS, JavaScript", desc: "Created an interactive portfolio to display projects and abilities.", image: "./images/portfolio.png.png" }
+            { title: "Sacred Temples Travels", category: "Web Application", tools: "HTML, CSS, JavaScript", desc: "Built a responsive website to showcase famous temples across India.", image: "./images/temples.png.png", link: "https://mini-project-chi-olive.vercel.app" },
+            { title: "Personal Portfolio", category: "Web Design", tools: "HTML, CSS, JavaScript", desc: "Created an interactive portfolio to display projects and abilities.", image: "./images/portfolio.png.png", link: "https://navjot-ranjan-portfolio.vercel.app" }
           ].map((project, index) => (
-            <div className="work-box" key={index}>
+            <div className="work-box" key={index} onClick={() => window.open(project.link, "_blank")} style={{ cursor: "pointer", transition: "transform 0.3s" }}>
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
