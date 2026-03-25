@@ -42,15 +42,15 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+        <a href="/images/profile.jpg" target="_blank" className="navbar-title" data-cursor="disable">
+          Navjot
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:navjotr220@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          navjotr220@gmail.com
         </a>
         <ul>
           <li>

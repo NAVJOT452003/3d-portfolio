@@ -19,7 +19,7 @@ const Work = () => {
     const parentWidth = box[0].parentElement!.getBoundingClientRect().width;
     let padding: number =
       parseInt(window.getComputedStyle(box[0]).padding) / 2;
-    translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
+    translateX = Math.max(0, rect.width * box.length - (rectLeft + parentWidth) + padding);
   }
 
   setTranslateX();
@@ -53,21 +53,25 @@ const Work = () => {
           My <span>Work</span>
         </h2>
         <div className="work-flex">
-          {[...Array(6)].map((_value, index) => (
+          {[
+            { title: "Sacred Temples Travels", category: "Web Application", tools: "HTML, CSS, JavaScript", desc: "Built a responsive website to showcase famous temples across India.", image: "/images/temples.png.png" },
+            { title: "Personal Portfolio", category: "Web Design", tools: "HTML, CSS, JavaScript", desc: "Created an interactive portfolio to display projects and abilities.", image: "/images/portfolio.png.png" }
+          ].map((project, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
 
                   <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
+                    <h4>{project.title}</h4>
+                    <p>{project.category}</p>
                   </div>
                 </div>
                 <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
+                <p>{project.tools}</p>
+                <p style={{ marginTop: '10px', fontSize: '1rem', lineHeight: '1.4' }}>{project.desc}</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
+              <WorkImage image={project.image} alt={project.title} />
             </div>
           ))}
         </div>
