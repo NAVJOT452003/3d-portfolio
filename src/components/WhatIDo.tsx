@@ -96,6 +96,7 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">JavaScript</div>
                 <div className="what-tags">Python</div>
+                <div className="what-tags">Java</div>
                 <div className="what-tags">React</div>
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">Express.js</div>
